@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@layer components{
+    .relative{
+        background-image: url('https://i.pinimg.com/474x/e1/3b/94/e13b944d47a98e97a16d088022eb0ee1.jpg');
+        
+    }
+}

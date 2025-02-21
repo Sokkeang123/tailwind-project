@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Link fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section
+    class="min-h-screen position-relative  bg-no-repeat h-auto bg-center bg-[url('https://s3-alpha-sig.figma.com/img/0c6e/d1f2/84ad103f098347c986f9842aa4608b9f?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=iys3Bc6ay~xyKdkHERtGtkl8qv2qza7HEglx4DOCxBq33mI0llNTnk8nHEzJlmJCy3xpHqlnMTwC43Zeu7yqGPo5oDIhKrWIlojBknHSL3MFWT-o4B5JGSh-3G5I-Q6~B6YbKxBNgm8L7jjWY83ZclfbYWKSKZderrNmJfK~KciydjguAE7T1qJ1vp72l2gun369UZEM1YlhrFF8OWy6vZuT5cV0UJyG1iMoDr7q-fmjklDIYRfARgX5HIACT62pgaXXvuMO5OP2DQ0JaF7klFB13yqC7Cj2PGrOnY8v7F89Ve-Bk84f6bXrvOWvj3hWlDXv-lJbvKV8ZEKTa6b1aw__')]">
+    <!-- Gradient in image -->
+    <div class="absolute inset-0 bg-gradient-to-l from-transparent via-black/80 to-black/100"></div>
+    <!-- Navigation Bar -->
+    <nav class="relative flex justify-between items-center lg:px-28 px-5 py-4 z-10">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-hammer text-2xl text-pink-600"></i>
+            <p class="text-white font-semibold uppercase text-lg tracking-wider">Factory Pro</p>
+        </div>
+        <!-- Hamburger Menu Button -->
+        <div class="lg:hidden">
+            <input type="checkbox" id="menu-toggle" class="hidden">
+            <label for="menu-toggle" class="cursor-pointer text-white">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </label>
+            <!-- Navigation Links -->
+            <ul id="menu" class="hidden flex-col gap-6 items-center absolute left-0 top-full w-full bg-amber-500 p-5">
+                <li><a href="#" class="transition-colors">Home</a></li>
+                <li><a href="#" class="transition-colors">About Us</a></li>
+                <li class="group relative">
+                    <div class="flex items-center cursor-pointer transition-colors">
+                        <span>Services</span>
+                        <i class="fa-solid fa-chevron-down ml-2 text-sm"></i>
+                    </div>
+                </li>
+                <li><a href="#" class="transition-colors">Blog</a></li>
+                <li><a href="#" class="transition-colors">Projects</a></li>
+                <li class="group relative">
+                    <div class="flex items-center cursor-pointer transition-colors">
+                        <span>Page</span>
+                        <i class="fa-solid fa-chevron-down ml-2 text-sm"></i>
+                    </div>
+                </li>
+                <li><a href="#" class="hover:text-pink-600 transition-colors">Contact Us</a></li>
+                <li class="flex items-center text-white rounded-full py-2 px-4 transition-colors">
+                    <i class="fa-solid fa-phone-volume mr-2"></i>
+                    <p>+01 123456789</p>
+                </li>
+            </ul>
+        </div>
+        <!-- Navigation Links for larger screens -->
+        <ul class="hidden lg:flex text-white gap-6 items-center">
+            <li><a href="#" class="transition-colors">Home</a></li>
+            <li><a href="#" class="transition-colors">About Us</a></li>
+            <li class="group relative">
+                <div class="flex items-center cursor-pointer transition-colors">
+                    <span>Services</span>
+                    <i class="fa-solid fa-chevron-down ml-2 text-sm"></i>
+                </div>
+            </li>
+            <li><a href="#" class="transition-colors">Blog</a></li>
+            <li><a href="#" class="transition-colors">Projects</a></li>
+            <li class="group relative">
+                <div class="flex items-center cursor-pointer transition-colors">
+                    <span>Page</span>
+                    <i class="fa-solid fa-chevron-down ml-2 text-sm"></i>
+                </div>
+            </li>
+            <li><a href="#" class="hover:text-pink-600 transition-colors">Contact Us</a></li>
+            <li class="flex items-center text-white rounded-full py-2 px-4 transition-colors">
+                <i class="fa-solid fa-phone-volume mr-2"></i>
+                <p>+01 123456789</p>
+            </li>
+        </ul>
+    </nav>
+    <!-- Hero Content -->
+    <div class="relative z-10 text-white left-10 sm:left-20 md:left-60 top-20 sm:top-40 md:top-80 w-full sm:w-3/4 md:w-96 p-4">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl">ALatest Post</h1>
+        <div class="flex flex-col sm:flex-row mt-2">
+            <div>
+                <p>Home</p>
+            </div>
+            <!-- icon item -->
+            <div class="ms-2 flex items-center">
+                <img src="../images/Item (3).png" alt="">
+                <span class="text-yellow-600 ">About Us</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Section 2 -->
+    <section class=" h-auto  relative justify-center flex">
+        <div class="w-4/5 mx-auto py-6  absolute">
+            <div class="flex justify-between space-x-4">
+                <!-- image 1 -->
+                <div class=" h-75 w-1/3  p-4">
+                    <div class="flex flex-col items-center justify-center">
+                        <img src="https://s3-alpha-sig.figma.com/img/3416/2d74/7a0661e754230021d94dacf503ee1fbf?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TFSEfsCojthBxPzH3mmcsWGdN8Kcr0WEA2w05MBqduZ-y4C-2uAY7XH7M3WvO8BVSyO6P5KcFi8N8gWjyzU0Dejf6gekKWPjFIU9xdfyWD0NNeFQ6SCJZtF54WvqHoUQ51xVufoG5fEuraFBWqSvs26HHsVG7uMofULNewaPD7Ce52kCyElpMLfVjEGEw3RBmSXyNMlwKavJTOd0mnJotGI0uQYFu3ImTpxu3d~CKXtK54A8~VAas3N45S0fn0iTieUu31FeuSoZtrHI4cbPfEL5a0SDlv1BMHkro9ZP1kJPuab6GjNJKIxKutVHiC3D32RbzWJuPFAC7hRmIZnEhA__"
+                            alt="Image 1">
+                        <p class=" text-gray-800">Sustainable Practices Reducing Waste in Industrial Production</p>
+
+                    </div>
+                    <div class="flex">
+                        <div class="text-yellow-500">
+                            <p>Read More</p>
+                        </div>
+                        <div class="ms-2 mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="yellow" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-arrow-up-right">
+                                <path d="M7 7h10v10" />
+                                <path d="M7 17 17 7" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- image 2 -->
+                <div class=" h-64 w-1/3  p-4">
+                    <div class="flex flex-col items-center justify-center">
+                        <img src="https://s3-alpha-sig.figma.com/img/61bc/2971/2184093399d239d65148f7c4b776a763?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=T2GJNVTMUoIbsQ3-r3FsIu7TdbEpnBO6VjLz7o8rWF3TlcenxYhHXTC3HF6O4UkjYH412PYJRVs6Gcxmyn0HbcJdDhadAYDjC8q2a1xVDtBF0qGGes4gj4CHOv6zyxp8~S5xcX1QUj9gZNx8XF4OHUq4lP-5fGGoTvHs6HzntJcn4MFZSJ41VVWpxhu92VUsmzQAl1-vNg8cdg4JX8bdZhiPb~lN5Lf3A0iMaPAagG6NIuactKELK9Dze3eYAadGiR14PgtjGeiAgnKBBnCBS34FZt3fq~oiB~K7M7lFO0R7ysp21OO1eY2TvpC8y24XZknaGWSopKJTCzpu80i6Pw__"
+                            alt="Image 1">
+                        <p class=" text-gray-800">Advanced Robotics Revolutionizing
+                            Industrial Workflows</p>
+
+                    </div>
+                    <div class="flex">
+                        <div class="text-yellow-500">
+                            <p>Read More</p>
+                        </div>
+                        <div class="ms-2 mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="yellow" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-arrow-up-right">
+                                <path d="M7 7h10v10" />
+                                <path d="M7 17 17 7" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- image 3 -->
+                <div class=" h-64 w-1/3  p-4">
+                    <div class="flex flex-col mt-52">
+                        <p class=" text-gray-800">Sustainable Practices Reducing Waste in Industrial Production</p>
+                        <div class="flex">
+                            <div class="text-yellow-500">
+                                <p>Read More</p>
+                            </div>
+                            <div class="ms-2 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="yellow" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-arrow-up-right">
+                                    <path d="M7 7h10v10" />
+                                    <path d="M7 17 17 7" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- section 3 -->
+    <section class=" h-auto mt-96 relative justify-center flex">
+        <div class="w-4/5 mx-auto py-6  absolute">
+            <div class="flex justify-between space-x-4">
+                <!-- image 1 -->
+                <div class=" h-64 w-1/3  p-4">
+                    <div class="flex flex-col mt-52">
+                        <p class=" text-gray-800">Leveraging Data Analytics for Smarter <br>
+                            Production</p>
+                        <div class="flex">
+                            <div class="text-yellow-500">
+                                <p>Read More</p>
+                            </div>
+                            <div class="ms-2 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="yellow" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-arrow-up-right">
+                                    <path d="M7 7h10v10" />
+                                    <path d="M7 17 17 7" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- image 2 -->
+                <div class=" h-64 w-1/3  p-4">
+                    <div class="flex flex-col mt-52">
+                        <p class=" text-gray-800">Reducing Operational Costs Through <br>
+                            Automation</p>
+                        <div class="flex">
+                            <div class="text-yellow-500">
+                                <p>Read More</p>
+                            </div>
+                            <div class="ms-2 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="yellow" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-arrow-up-right">
+                                    <path d="M7 7h10v10" />
+                                    <path d="M7 17 17 7" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- image 3 -->
+                <div class=" h-64 w-1/3  p-4">
+                    <div class="flex flex-col mt-52">
+                        <p class=" text-gray-800">The Advantages of Customized
+                            Manufacturing Solutions</p>
+                        <div class="flex">
+                            <div class="text-yellow-500">
+                                <p>Read More</p>
+                            </div>
+                            <div class="ms-2 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="yellow" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-arrow-up-right">
+                                    <path d="M7 7h10v10" />
+                                    <path d="M7 17 17 7" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Footer -->
+
+    <section
+        class=" mt-96 my-12 p-6 bg-cover bg-center relative bg-[url('https://s3-alpha-sig.figma.com/img/4818/6e36/010d42fdc5dec72bfe740555692ef04e?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=laCFoU62eIID8Mbxb7ZgSnEvmnriI2DfBeLHHDd9e5m1ssFJ5yMHeK0-w9cVO0GHqKfQeRAs8LWBddupGPE546lifDb7-D~S0OqVOEuE3ofHxu6w~SEK8g7ROKwFPHiFiuAUC3XsIgjwTcuQp7CdThBWrjNDC1KQ6Tmev4raPgqfzT2kLHfS~834k2EuN3LWTR6t9xy~1sJs9s2RCTDbUhxGA4Wb-KD2lnxtBplvBWuxdPUuC1WkY8EBeTD1R0VQImND6o7PlD6iN8k~a-U4lz09X5bZYnXaPMO5fHkVToNUBIJ6yr7YDdG6VuTtIf8U~I5SeBOSgyrKzV1Px884Yw__')]">
+        <!-- Gradient Overlay (Top and Bottom) -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div> <!-- Top Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent"></div> <!-- Bottom Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-l from-black to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-tl from-black to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-tr from-black to-40%"></div>
+        <!-- Content -->
+        <div class="relative z-10">
+            <!-- Top Section -->
+            <div class="flex ms-20 justify-between items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-4">Ready to work with us?</h2>
+                    <p class="text-gray-300 mb-6">Join us to experience cutting-edge industrial solutions that drive
+                        innovation and lasting success.</p>
+                </div>
+                <div>
+                    <img class="w-20 h-20 me-80" src="../images/Background.png" alt="">
+                </div>
+            </div>
+            <!-- Bottom Section -->
+            <div class="border-t  border-gray-700 mt-10 mb-10"></div>
+            <div class="flex ms-20 flex-col md:flex-row justify-between  items-start mt-8">
+                <!-- FactoryPro Section -->
+                <div>
+                    <div class="flex items-center mb-4 ">
+                        <div class="relative">
+                            <img src="../images/Vector (5).png" alt="">
+                            <img class="absolute w-5  ms-3 left-3 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                                src="../images/Group_4__1_-removebg-preview.png" alt="FactoryPro">
+                        </div>
+                        <span class="text-xl font-bold text-white ml-2">FactoryPro</span>
+                    </div>
+                    <div>
+                        <p class="text-gray-300">
+                            We are committed to providing <br>
+                            personalized industrial solutions.
+                        </p>
+                    </div>
+                    <div class="mt-6 flex">
+                        <img class="me-16" src="../images/item.png" alt="">
+                        <img class="me-4" src="../images/item (1).png" alt="">
+                        <img class="me-4" src="../images/item (2).png" alt="">
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="ms-80 ">
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Services</a></li>
+                    </ul>
+                </div>
+                <!-- Policies -->
+                <div class="ms-44 ">
+                    <h4 class="font-semibold text-white mb-4">Policies</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Help</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div class="me-72 ms-44">
+                    <h4 class="font-semibold text-white mb-4">Contact</h4>
+                    <p class="text-gray-300 mb-2">1234567890</p>
+                    <p class="text-gray-300 mb-2">info@domain.com</p>
+                    <p class="text-gray-300">5201 West Valley, Anytown</p>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-10 "></div>
+            <div class="mt-6 pt-4">
+                <p class="text-center text-gray-500">Copyright © 2024. All Rights Reserved.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

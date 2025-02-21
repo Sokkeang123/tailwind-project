@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Pro</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Link fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section
+        class="min-h-screen h-auto bg-center bg-cover bg-no-repeat position-relative bg-[url('https://s3-alpha-sig.figma.com/img/7dda/2dce/3c5237e02638621aad3ba670d0115845?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ArBM~SF-ZOj9Ur3aNLa3Zuz~zk531NUzVOQKOjtmjaHqrDDDb-b~CVouStF-7xZ5QZ4OnkrX8dyV7cUF1KSpbWNlPUWnw~IGH-PALOYN9WiNq4LhsK6n5ili6Fj1gCRvkVeJVsOtFSV9Ge8Y4ZLgw4OzyQjavmxRJhm0m8JFUXJHq9Fvs8x7ZOqOjrZgyeOa1Atinui1vSBs3SAsaAoTCbQyXxhvCotkaOYk-ogA8ZGjMsr9yhE-LnpMfc8hGxOpFx6s49Va97PYc9QhA4kZmDKtI2b6FE4alu2gEaaaja4Z6QquMRKi0ySk0izgBUSdL4QUlCYPfkulgLsu4hDOCA__')]">
+        <!-- Navigation Bar -->
+        <nav class="flex justify-between items-center lg:px-28 px-5 py-4 bg-black bg-opacity-50">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-hammer text-2xl text-pink-600"></i>
+                <p class="text-white font-semibold uppercase text-lg tracking-wider">Factory Pro</p>
+            </div>
+            <!-- Navigation Links -->
+            <ul class="hidden lg:flex text-white gap-6 items-center">
+                <li><a href="#" class="transition-colors">Home</a></li>
+                <li><a href="#" class="transition-colors">About Us</a></li>
+                <li class="group relative">
+                    <div class="flex items-center cursor-pointer transition-colors">
+                        <span>Services</span>
+                        <i class="fa-solid fa-chevron-down ml-2 text-sm"></i>
+                    </div>
+                </li>
+                <li><a href="#" class="transition-colors">Blog</a></li>
+                <li><a href="#" class="transition-colors">Projects</a></li>
+                <li class="group relative">
+                    <div class="flex items-center cursor-pointer transition-colors">
+                        <span>Page</span>
+                        <i class="fa-solid fa-chevron-down ml-2 text-sm"></i>
+                    </div>
+                </li>
+                <li><a href="#" class="hover:text-pink-600 transition-colors">Contact Us</a></li>
+                <!-- Phone Icon & Number -->
+            <li class="flex items-center text-white rounded-full py-2 px-4 transition-colors">
+                <i class="fa-solid fa-phone-volume mr-2"></i>
+                <p>+01 123456789</p>
+            </li>
+            </ul>
+            
+        </nav>
+        <!-- Hero Content -->
+        <div class="flex flex-col justify-center items-center  h-[80vh]">
+            <div class="absolute left-32">
+                <h1 class="text-5xl text-white mb-4">Excellence innovating <br> <strong>industry for today</strong></h1>
+                <p class="text-lg lg:text-xl text-gray-200 mb-8 max-w-2xl">
+                    At the heart of our operations is a commitment to delivering superior product through cutting-edge
+                    technology and innovative processes.
+                </p>
+            </div>
+            <!-- Button Learn more with icon -->
+            <div
+                class="bg-amber-500 absolute left-32 bottom-44 h-12 w-40 mt-3 rounded-lg flex items-center justify-center">
+                <div class="bg-amber-50 h-10 w-5/6 text-center rounded-lg flex items-center justify-between px-4">
+                    <p>Learn More</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-move-up-right">
+                    <path d="M13 5H19V11" />
+                    <path d="M19 5L5 19" />
+                </svg>
+            </div>
+        </div>
+        <!-- Footer in hero section -->
+        <div
+            class="footer-hero gap-40 position-absolute left-60 flex justify-center items-center text-white w-5xl h-20 text-center">
+            <div class="d-flex">
+                <div>
+                    <p>Advanced Manufacturing Solution</p>
+                </div>
+            </div>
+            <div>
+                <p>Quantity Assurance Systems</p>
+            </div>
+            <div>
+                <p>State-of-the-Art Technology</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 2 -->
+    <!-- Building quality -->
+    <section
+        class="min-h-screen w-screen bg-contain bg-center bg-[url('https://s3-alpha-sig.figma.com/img/e21b/f34f/d53480725a3ab1715a5c5b3122644103?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=RrQSoMLeN1n99lGDJr7twiXUFt5qIWthawA4dhWO5D82mV3KADqaW-pEJkwervpzw-N3~YGMOS3EN5RMJrFjn1hxkfl~A21DHbK9DrVJSAdrBim27vHsfVlrYVt5WNQSRF0Fu4wax6Nj04gIsxbOK6psoBI1zIySfCyTvGGpF3H-i71U1Kutm5pXf42V8lZboRnsRFosXRq8kUQNMA7j96ysZggA5~r9eAwiQDttmDTK1oCwJFD2UiHS0f4W~o9lXvLdkEV2iAI1inENQtrqVJjZl15MzGReX94iRQaslbksxaIybqdbkxSaHbv1Gg2-V3DCIo08ttPQ1pAfMDL-3Q__')]">
+        <!-- First section of Building quality -->
+        <div class="bg-white w-full pb-10 flex justify-center items-center position-relative">
+            <!-- left side -->
+            <div class="w-80 h-96 me-16 w-7x  relative">
+                <div class=" flex items-center ">
+                    <!-- Image -->
+                    <div class="w-60 h-36">
+                        <img class="rounded-xl h-full"
+                            src="https://s3-alpha-sig.figma.com/img/f334/2a77/ec51f68078ce55e4b40e4d4cfdfa4b22?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JomIsLb8bCLCGobhemO-Gwvtk~YUA-bC9ZTrBOTJc73yz-W9~FKLRQdB9VVWm50IdMjatnjEtcGqYoKI2wWoN0AG1mlIafracy-mFoUn~53GudLuCfokQyYe9Am6q5l4eC3UIw4~c4WNiERRdUMTKw8uuT5KX~6S3~LvgoMX4QntZ0kjFQUeoeAz1sI5vXN3bJtGuvGd8wdzqMkqrccMEdqTfDYthSUzs2oLnK7GQ2f8ANyYGMmiPJKcysHVQbmZEbflAmhS5QHHR0-tx-3A2He-Pq0EAJSHvCLdrHOV5c37xM4JpRhfwjPeQWBvF8nSDHRe23qF1l30vC7ApR8I8Q__"
+                            alt="">
+                    </div>
+                    <!-- 25+ -->
+                    <div class="ms-4 mb-10 flex justify-center">
+                        <div class="text-5xl font-bold text-yellow-600">
+                            <p>25+</p>
+                        </div>
+                        <div class="ps-5">
+                            <p>Year Of <br>Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-300  h-5/5 absolute top-1/3 left-1/4">
+                    <img class="rounded-xl ps-1 pr-1 pt-1 pb-1"
+                        src="https://s3-alpha-sig.figma.com/img/6a1f/e574/71645599c9dfa4fa56b315f5c79050fd?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AElBiWdWkJos~wjwQ4AIaIvjzyHf0mliG8TNQPRNKcotOuO9JnlFExj3VpPKzbl01J4caNjS3J3gS9oamWrTagfL6MlDdLcyOYcUVvMYQU0PbQmdUwGtkshNxVc64hXnI2NKzo1u5i-BqepYN1eeiqSC2fVK~Z7JqL1hvR0nxLEFZHT2IRNs0BwVx96Q33FzoQa8bia46mTHowAWpkCdnQ3OZGqXI3R-XtbMSd7YYDMgKq22aeqOciUXWAgcAZWzsiSI3mbWHbaRf1fvMIdf5R16kzmY9oER-xIw0eKbS74NvQYaRMZP5DdNR69scGzX4I4PTogHimt1kTAQd4EUAg__"
+                        alt="">
+                </div>
+            </div>
+            <!-- Right side -->
+            <div class="w-7xl ">
+                <div class="">
+                    <p><i class="fa-solid fa-gear" style="color: #FFD43B;"></i> ABOUT US</p>
+                    <p class="text-5xl">Building quality through</p>
+                    <p class="text-5xl"><strong>industrial innovation</strong></p><br>
+                    <p>At the heart of our operations is a commitment to delivering superior products<br>through
+                        cutting-edge technology and innovative processes.</p><br>
+                </div>
+                <div class=" h-60 flex w-full justify-center items-center">
+                    <div class="h-60 w-1/2 ">
+                        <!-- Details -->
+                        <div class="space-y-4">
+                            <p class="leading-relaxed">
+                                <!-- icon -->
+                                <i class="fa-solid fa-gear" style="color: #FFD43B;"></i>
+                                Sustainable manufacturing
+                            </p>
+                            <p class="leading-relaxed">
+                                <!-- icon -->
+                                <i class="fa-solid fa-gear" style="color: #FFD43B;"></i>
+                                Advanced Automation
+                            </p>
+                            <p class="leading-relaxed">
+                                <!-- icon -->
+                                <i class="fa-solid fa-gear" style="color: #FFD43B;"></i>
+                                Efficient Production Processes
+                            </p>
+                            <p class="leading-relaxed">
+                                <!-- icon -->
+                                <i class="fa-solid fa-gear" style="color: #FFD43B;"></i>
+                                Reliable Delivery Services
+                            </p>
+                        </div>
+
+                        <!-- Button Learn more with icon -->
+                        <div class="bg-amber-500 h-12 w-40 mt-3 rounded-lg flex items-center justify-center">
+                            <div
+                                class="bg-amber-50 h-10 w-5/6 text-center rounded-lg flex items-center justify-between px-4">
+                                <p>Learn More</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-move-up-right">
+                                <path d="M13 5H19V11" />
+                                <path d="M19 5L5 19" />
+                            </svg>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class=" h-60 w-1/2">
+                        <div class="bg-gray-300 h-52 w-60 mt-4 ms-4 rounded-xl relative">
+                            <div class="absolute top-1/2 left-12 transform -translate-y-1/2">
+                                <div class="ps-3">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                </div>
+                                <p>
+                                    15.5K Genuine rating
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Service section of Building quality-->
+        <div class=" text-white flex h-40 mt-7 justify-evenly ">
+            <div class=" w-82 h-full">
+                <p>
+                    <i class="fa-solid fa-gear" style="color: #FFD43B;"></i>
+                    SEVICES
+                </p>
+                <h1 class="text-3xl">
+                    Comprehensive solutions <br>
+                    for industrial excellence
+                </h1>
+            </div>
+            <div class="w-90 h-full pt-6">
+                <p>
+                    We provide a wide range of services tailored to meet the unique needs of <br>
+                    modern industries. From precision manufacturing and advanced <br>
+                    automation to custom product design and efficient logistics.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="relative top-[-40px] h-auto w-full">
+        <!-- First section -->
+        <div class="bg-white h-50 w-3/4 mx-auto rounded-2xl shadow-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+                <!-- Custom Manufacturing Section -->
+                <div class="h-60 space-y-6 ps-8">
+                    <!-- icon -->
+                    <div class="mt-8">
+                        <img src="../images/Vector (1).png" alt="">
+                    </div>
+                    <!-- custom -->
+                    <div>
+                        <p class="text-xl font-semibold">Custom Manufacturing <br> Solution</p>
+                    </div>
+                    <!-- arrow symbol -->
+                    <div
+                        class="flex items-center justify-center bg-gray-300 w-20 p-2 ps-6 rounded-xl hover:bg-gray-400 transition ease-in-out duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-arrow-right text-gray-600 hover:text-gray-800">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- Repeat other sections similarly -->
+                <div class="h-60 space-y-6 ps-8 border-l-2 border-gray-200">
+                    <div class="mt-8">
+                        <img src="../images/SVG.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-xl font-semibold">Industrial Automation <br> And Robotics</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-center bg-gray-300 w-20 p-2 ps-6 rounded-xl hover:bg-gray-400 transition ease-in-out duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-arrow-right text-gray-600 hover:text-gray-800">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="h-60 space-y-6 ps-8 border-l-2 border-gray-200">
+                    <div class="mt-8">
+                        <img src="../images/SVG (1).png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-xl font-semibold">Product Design And <br> Prototyping</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-center bg-gray-300 w-20 p-2 ps-6 rounded-xl hover:bg-gray-400 transition ease-in-out duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-arrow-right text-gray-600 hover:text-gray-800">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="h-60 space-y-6 ps-8 border-l-2 border-gray-200">
+                    <div class="mt-8">
+                        <img src="../images/Vector (2).png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-xl font-semibold">Equipment Maintenance <br> Support</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-center bg-gray-300 w-20 p-2 ps-6 rounded-xl hover:bg-gray-400 transition ease-in-out duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-arrow-right text-gray-600 hover:text-gray-800">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second section -->
+        <div class="bg-white w-3/4 h-full flex mx-auto mt-20">
+            <!-- left side -->
+            <div class="w-1/2 h-full flex flex-col items-center justify-center">
+                <div class="h-2/4 flex flex-col justify-center p-4">
+                    <p class="text-lg font-medium">
+                        OUR STORY
+                    </p>
+                    <h1 class="text-3xl font-bold">
+                        Transforming industries <br>
+                        with innovative efficient <br>
+                        solutions
+                    </h1>
+                </div>
+                <!-- image -->
+                <div class="h-96 w-96">
+                    <img class="rounded-2xl"
+                        src="https://s3-alpha-sig.figma.com/img/0a72/6a7d/9f22d579ef01c703d6cfb380bc534a7c?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=g~xvctGF3XycwZN4zYtLxVvPV~eWR42HoeXksv2bc25-5Ba1vYcrFgRurL7DklCEPypBtOIaZU0YVpBlijCg~oEuFI1HSx~P3rZFUrRqUxr2bB26VzrdzaxjZBEh0A6twZFLl9BZVDGtZSCG85upIBXBNsfufvJGeHRBd39HUkA2POx6UfBdmnQssBkoVsovs3tvreZs9jLLFdJFEranmk2nrRY-Emxe3mXi1t4p~u8s-UF2H4DLxUITrzljEEmVufqQNi~WK1OC0G894fC0MCPPMstTRApaDIKMDuJZK5e9SyTcTCDEYh1tim7Cfa2AKNDQdtGIEiLxkpUGV~dt5g__"
+                        alt="">
+                </div>
+            </div>
+            <!-- Right side -->
+            <div class="  w-1/2 h-full flex flex-col items-center justify-center">
+                <!-- header image-->
+                <div class="w-full h-auto flex ">
+                    <div class="pe-4">
+                        <img class="rounded-2xl"
+                            src="https://s3-alpha-sig.figma.com/img/e4dc/5f6d/c5d08396c524c79af47c912624c4aa19?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=BUjDJ0lYekP0HWCdAkNjY64~xFyXdrSY-Z1h2bKSO17vfKeFQtG4vKS5esCIEii1FKPVeMA6BktDa5XelYSxspr6I4UZ9c1kEsCVIFrzr2oiwQ3oc93p8rf3tANLyFrdVxVGV2GSJ921UF9JJBNjSG3Ljcp5C3k~A5tNmD3Vf3b4ViruHnUOyz7dNp7~2ek-rDjDBIqGAjEvD7h9oWoVdVpOiQMCs0SoiNBO53nbyRjKkOdO4wFkDyvGFCYxgxjzq4YI-066jrGlHwX3nayJjd1KO8j4QPv59U2z290wZDGEin2mnjrU7NkPEibLHcr6JnL0RJramR57kUxOa0IOhw__"
+                            alt="">
+                    </div>
+                    <div>
+                        <img class="rounded-2xl"
+                            src="https://s3-alpha-sig.figma.com/img/8002/68c0/c28076a49ac9156ef9580635dbd99e3d?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=I08-NWpJYdOg0Fx7iIJ8XIEXMItthDvfjmIesqWW5KmxW2QKz81-CiUMWbMi91HSEQlhpoZB8ZEv7o-oS5A5Cp9AVqslu89eodTfrzj07t1OCJj08WQ7MjsqlTWWCl6PNFDowqJszg5sb5r67POLenV3dgm6P4HzaLlUEy9rjuC~Qdy6G3IYBVOtbCVr-XuJWbjGMsAzN98HVBoco6AyyWInbDTK-1MHQZFmZeY4Ty~RDERFnBsTu~sW1VHJlJKQfD6ktP8et~KxD7un6qGQFgj9jCtU~W8it5ShYVEuCg9mgAFhgj-5K~DEELWl3gyjeNYDpahaURQm5uItBBFG8Q__"
+                            alt="">
+                    </div>
+                </div>
+                <!-- body detail -->
+                <div class="flex-grow mt-12">
+                    <p>
+                        We specialize in revolutionizing industries by delivering innovative, efficient <br>
+                        solutions that enhance productivity and streamline processes.Through advanced <br>
+                        technologies, precision engineering, and sustainable practices.
+                    </p>
+                </div>
+                <!-- footer detail -->
+                <div class="h-auto flex mt-12">
+                    <div class=" pe-4">
+                        <h1 class="text-yellow-600 font-bold text-3xl">10K+</h1>
+                        <p>Completed Project</p>
+                    </div>
+                    <div class=" ms-4 me-4">
+                        <h1 class="text-yellow-600 font-bold text-3xl">15K+</h1>
+                        <p>Satisfied Customer</p>
+                    </div>
+                    <div class="">
+                        <h1 class="text-yellow-600 font-bold text-3xl">10K+</h1>
+                        <p>Year Of Mastery</p>
+                    </div>
+                </div>
+                <!-- account -->
+                <div class=" w-96 h-auto flex mt-4">
+                    <div class="w-60 h-20  relative  flex items-center p-2">
+                        <div class="w-14 h-14 relative z-10">
+                            <img class="w-full object-contain h-full object-cover rounded-full"
+                                src="https://i.pinimg.com/474x/c6/a2/cd/c6a2cd0d5b2c5164c6c4f6bb4176e740.jpg" alt="">
+                        </div>
+                        <div class="w-14 h-14 relative -ml-5 z-20">
+                            <img class="w-full object-contain h-full object-cover rounded-full"
+                                src="https://i.pinimg.com/474x/3b/35/05/3b3505848229e5758dd7bcc709f65678.jpg" alt="">
+                        </div>
+                        <div class="w-14 h-14 relative -ml-5 z-30">
+                            <img class="w-full object-contain h-full object-cover rounded-full"
+                                src="https://i.pinimg.com/474x/fd/37/35/fd373555b828325377219b09d975ecf3.jpg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="flex">
+                        <div>
+                            <img src="../images/Border.png" alt="">
+
+                        </div>
+                        <div class="pt-4 ps-4">
+                            WATCH INTRO
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Section 4 -->
+    <div class="flex justify-center">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 text-white bg-black p-8">
+            <!-- Left Side -->
+            <div>
+                <div class="bg-gray-600 p-6 rounded-lg shadow-lg mb-6">
+                    <div class="flex">
+                        <div>
+                            <img class="me-2" src="../images/icon-sub-heading.svg fill.png" alt="">
+                        </div>
+                        <div>
+                            <p>
+                                WHAT WE DO
+                            </p>
+                        </div>
+
+                    </div>
+                    <h2 class="text-3xl font-semibold">Innovative factory and industry <br> solutions today</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class=" p-6 rounded-lg shadow-lg">
+                        <img src="../images/SVG (2).png" alt="Image 1" class="mb-3">
+                        <h2 class="text-2xl font-semibold mb-3">Automation Solutions</h2>
+                        <p class="text-gray-300">Streamlining processes through <br> cutting-edge technology.</p>
+                    </div>
+                    <div class=" p-6 rounded-lg shadow-lg">
+                        <img src="../images/SVG (3).png" alt="Image 2" class="mb-3">
+                        <h2 class="text-2xl font-semibold mb-3">Quality Control</h2>
+                        <p class="text-gray-300">Ensuring product excellence through <br> rigorous testing.</p>
+                    </div>
+                    <div class=" p-6 rounded-lg shadow-lg">
+                        <img src="../images/SVG (4).png" alt="Image 3" class="mb-3">
+                        <h2 class="text-2xl font-semibold mb-3">Process Engineering</h2>
+                        <p class="text-gray-300">Enhancing manufacturing efficiency through <br> optimized processes.
+                        </p>
+                    </div>
+                    <div class=" p-6 rounded-lg shadow-lg">
+                        <img src="../images/Container.png" alt="Image 4" class="mb-3">
+                        <h2 class="text-2xl font-semibold mb-3">Product Development</h2>
+                        <p class="text-gray-300">Creating innovative products with <br> cutting-edge technology.</p>
+                    </div>
+                </div>
+                <p class="mt-6">
+                    Let’s make something great together.
+                    <a href="" class="text-yellow-600">Get Free Quote</a>
+                </p>
+            </div>
+            <!-- center -->
+
+            <!-- Right Side -->
+            <div class="flex items-center relative justify-center">
+                <img class="w-20 absolute left-[-1px]" src="../images/Background.png" alt="">
+
+                <img class="ms-14 rounded-3xl"
+                    src="https://s3-alpha-sig.figma.com/img/fa37/2332/7ae8750b0f78e623c8747ded7219a14e?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=qs5n3WqVZopMfHnbvpg9pisEWDkePKvdZIAqNYrgyL1kGVCb0ilXj6PSQPtvP0iMjpPRaOnmAJLRTolTuhHDTEcytTjkzLLX2JO3XLMOFtYJdZ~VaC7UQP1Ut-25ejY0Cm59ADGD7oUyWBF-ng104OQmxT3lLJXOuNLa-VdbTyE8nP~QYSWeH2Xn2~fRvHNgo5fUigPJI5oVB1lUMOtsn3UrGp5ZoEa9O~Brk4uUoFHFJ8hnUPW-TQKyvEhK5kzUujRRL76Bi5ryOidXcXmRsEb~X6smYlI1bTgsf3hoiBy4yRPNQi6VxVPS3sM7~MCVuDOO8oCJRDunptniZScyzA__"
+                    alt="Right Side Image" class="max-h-screen object-cover rounded-lg shadow-lg">
+            </div>
+        </section>
+    </div>
+
+    <!-- Section 5 -->
+    <section class="text-gray-800">
+        <div class="container mx-auto px-4 py-12">
+            <div class="flex  text-center w-2/5 justify-center ">
+                <div class="pe-4">
+                    <img src="../images/icon-sub-heading.svg fill.png" alt="">
+                </div>
+                <div>
+                    OUR WORK
+                </div>
+            </div>
+            <!-- Header Section -->
+            <header class="text-center mb-12 flex w-3/4  ms-60 ">
+                <div class="pe-20">
+                    <h1 class="text-4xl font-bold">Our successful project <br>
+                        initiatives</h1>
+                </div>
+                <div>
+                    <p class="text-lg text-gray-600">Our successful project initiatives showcase our commitment to
+                        excellence <br>
+                        and innovation across various industries.</p>
+                </div>
+            </header>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-300 my-8"></div>
+
+            <!-- Tags Section -->
+            <section class="text-center mb-12">
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class=" text-yellow-600 text-sm font-semibold px-4 py-2 ">All /</span>
+                    <span class="text-sm font-semibold px-4 py-2 ">Automation / </span>
+                    <span class="text-sm font-semibold px-4 py-2 ">Development / </span>
+                    <span class=" text-sm font-semibold px-4 py-2 rounded-full">Infrastructure / </span>
+                    <span class=" text-sm font-semibold px-4 py-2 rounded-full">Manufacturing / </span>
+                    <span class=" text-sm font-semibold px-4 py-2 rounded-full">Sustainability</span>
+                </div>
+            </section>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-300 my-8"></div>
+
+            <!-- Project Initiatives Section -->
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Image 1 -->
+                <div class=" p-8 rounded-4xl ">
+                    <img src="https://s3-alpha-sig.figma.com/img/cd89/7d9e/1afc29eb5beef378a71da7c94398f036?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=CprogjdzFSCP9~ixYi-jW2wwfye-~8rbCwZEaiGHLORFth~7tG-NAMGzCShcFRpW5WRDnipuagK059ltrnjAj-IxL7Mj9NGmLg0Gk5V-lMhQoycTVjKVsdm83DitgBX9eJTLKBhZi7IgLEMb16Qe4LHXVeXyhlTFfKYJkGk4fJciun9Nnb2DQYO~eTikVMpp4LrMKRND0VOv4snRJtwjj~-DEHW3LWMO4TliXoiScX8Rto8yg~7igPbHfbwFtJGD5IGWfkW6ktD7~uUMH2BhXZ-T9e6nsWOC7~yc~Ozb~5FMwK-UK1DnJpyNOpHNdFp5-NimE9ZfYFxkk9UTxndpug__"
+                        alt="Image 1" class="mb-3 rounded-lg">
+                    <h2 class="text-2xl font-semibold mb-3">Total Quality Management Implementation</h2>
+                </div>
+                <!-- Image 2 -->
+                <div class="bg-white p-8">
+                    <img class="rounded-xl"
+                        src="https://s3-alpha-sig.figma.com/img/950c/2baf/7299f6c6421440751984552ed147327e?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=cWQGRdxA-Vl4VxSBJIbpW07aEje-UhR0SyWJN-DPJ7D-c7BuJoBRBTEQ2FxrCf43vQ1DHrj19w0XNJy1xui~r7r6moh-9i4UvLzr~Mu98RtQHb~P7-xrCcJ5l7DU7W8zGLS6ptTHry6kP6F7uOYt~o-VKe-Xg1nufrruGw0XC7kSnAbNB7hGlf2fIAP5DLVpATwqAM3ryToc~bJUi-b84Las5z9yj-AR~jjYUHtks8iXHOMJZwp~JAEKkXginWFUpHVJN1eTSHh3u5wx0y4RlPVNgFP~2DTxuJRxNDUn2D82bhIcLirqRLjuyBBWoY8GDaxomAgHJodX0wTX6krTLg__"
+                        alt="Image 2" class="mb-3">
+                    <h2 class="text-2xl font-semibold mb-3 pt-3">Advanced Research in Material Science</h2>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="bg-white p-8 ">
+                    <img class="rounded-xl"
+                        src="https://s3-alpha-sig.figma.com/img/5344/c377/eb02546c4087ab57d3b26be953f9d8a0?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Q4kEY37D6lobkwTWMAWaJsNJ1htqDG2CVkEV0Z2aSJAjtY5NiHMwsmdXY8u-GvqYTJCjSg6MlF28oD0SmxF8iwz3ju-bVK~Q2hfqj0Lc-y4VH8ZiQC7vE47GcCuBVtCy4VUGU8-BSKL2Bl0KrCMhy-1wXIImOeNZZTnqdvMlfn0WeZMwXmIIELekV3SkdpTavqfrh5qyMko2uRorgihaWZLsMywl3Xc9hELSfQ45V7YZMsrAjkPhRHUVvR5ICorX2M-WTZQc7B3ibCyIg2CH~Pm9m~goyoO1TrfXyN0agSZYjr3Rn~PpXZ5Q~wijaAaafHesX5qtUG3eLYYewCQ1Xg__"
+                        alt="Image 3" class="mb-3">
+                    <h2 class="text-2xl pt-3 font-semibold mb-3">Workplace Safety Enhancement Initiative</h2>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="bg-white p-8 ">
+                    <img class="rounded-xl"
+                        src="https://s3-alpha-sig.figma.com/img/ce32/7337/ea44a1c858c0bd0686719acfc29a2e23?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Zq5beRCrE4GiqU7X6fF0cRdqZC6E5xshlPSyiZdEzGFZJYWqvlUQgA-deJexshVS1Lh~93tU5-4DKezrpAMkER0QSgutZlz66Sn6ViLXt5UZ04tZsIvtVwsxSu65M4qY-xavLugLjHHXP2wrpWs8HZmbsNnPSfowgmjqQKHK2gEjTvp9iTjwpWSio9BvP9o~nXYdGPF5EmMN55RPm8cYd9~y7GDCGy5zh3UkvqkybWCf4RXHLdbuHh~TiUWS2vf6TMoWRUuBo4Gdri4SL~nNsKceV-M0DXyLmflF7ZD1zZ3J8WgHQ4J4F9P0Zi7OsHgwG59kL3Hif9ReoIeARuFUWQ__"
+                        alt="Image 4" class="mb-3">
+                    <h2 class="text-2xl pt-3 font-semibold mb-3">Robotic Process Automation Deployment</h2>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section class="bg-gray-100 text-gray-800">
+        <div class="container mx-auto px-8 py-8">
+            <div class="grid ms-20 grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Left Side -->
+                <div class=" w-2/2 space-y-8">
+                    <div class="flex items-center space-x-4">
+                        <div>
+                            <img src="../images/icon-sub-heading.svg fill.png" alt="Icon" class="w-6 h-6">
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">OUR PROCESS</p>
+                        </div>
+                    </div>
+
+                    <h1 class="text-4xl font-bold">
+                        Streamlined processes for <br>
+                        optimal efficiency
+                    </h1>
+                    <img class="h-96 rounded-3xl"
+                        src="https://s3-alpha-sig.figma.com/img/51e9/b663/0f210fdca3d21d5c0c384824664572f5?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=lqo5YJRaOHZHaDIUCpXny8SOmd-E1GVIqjE5ChHPIdbgO~CjhsKeXOeEWyvA00~XmIuNVsCP1qKFYDKqx1iEP5WrcNseJCbyEQnEsjzA4hgXa8Jy~WK1rTBFPfmGzy-IrWiL2JbDhHrtJsSe3gDDGGWHjZHnhxKXJERoMnUZpP~AO2ELFN-t2-KI4keySdfXlU-wsKtRk4r2o~wiIYJ-fjG-BQ67VGJtWnOnl89dfqYtbtCqIKEHxUaTyRBdahljlo0s33aQNmX7OwxvaKg-EPQ8TFNibWSOYsPE1oBk5cqW4SdxRQ3ZJyhEeRHObgn8sPbcZBh4hfwHDHY076GVxQ__"
+                        class="rounded-lg" alt="Process Image">
+                </div>
+                <!-- Right Side -->
+                <div class="space-y-8 w-4/5">
+                    <p>Our process is designed to maximize efficiency and quality at every stage <br>
+                        of production. By integrating advanced technologies and best practices, <br>
+                        we ensure seamless workflows.</p>
+                    <div class="space-y-4">
+                        <div class="flex">
+                            <div class=" w-1/6 flex items-center justify-center">
+                                <strong class="text-3xl text-yellow-600">01</strong>.
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-semibold">Understanding Your Needs</h3>
+                                <p class="text-lg">We begin by thoroughly assessing your requirements and objectives to
+                                    develop a tailored approach.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="space-y-4 bg-yellow-500 rounded-3xl">
+                        <div class="flex">
+                            <div class=" w-1/6 flex items-center justify-center">
+                                <strong class="text-3xl text-yellow-600">02</strong>.
+                            </div>
+                            <div class="">
+                                <h3 class="text-xl font-semibold">Design and Planning</h3>
+                                <p class="text-lg ">Our team collaborates to create detailed project plans, <br>
+                                    all aspects of the process.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex">
+                            <div class=" w-1/6 flex items-center justify-center">
+                                <strong class="text-3xl text-yellow-600">03</strong>.
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-semibold">Implementation</h3>
+                                <p class="text-lg">Utilizing advanced technologies and skilled personnel, <br>
+                                    execute the project</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Secttion 7 -->
+    <section class=" mx-auto my-12 p-6">
+        <div class="flex justify-between items-start space-x-6">
+            <div class="text-center flex-1">
+                <div class="flex items-center justify-center space-x-2 mb-4">
+                    <img src="../images/icon-sub-heading.svg fill.png" alt="">
+                    <h2 class="text-3xl font-bold text-gray-800">Pricing Plan</h2>
+                </div>
+                <h3 class="text-xl text-gray-600 mb-4">Transparent pricing for every solution</h3>
+            </div>
+            <div class="max-w-lg text-left flex-1">
+                <p>
+                    We believe in providing clear and upfront pricing to ensure that you understand the value of our
+                    services.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-start space-y-4 md:space-y-0 md:space-x-4">
+            <div class="flex items-center justify-center  p-6">
+                <div class="rounded-lg shadow-lg p-6 max-w-xs">
+                    <h2 class="text-3xl font-bold text-gray-800">$39</h2>
+                    <p class="text-gray-600">/month</p>
+                    <h3 class="text-xl font-semibold mt-4">Advanced Plan</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li class="flex items-center">
+                            <img src="../images/icon-sub-heading.svg fill.png" alt="">
+                            <span class="ml-2">Standard Manufacturing Services</span>
+                        </li>
+                        <li class="flex items-center">
+                            <img src="../images/icon-sub-heading.svg fill.png" alt="">
+                            <span class="ml-2">Quality Control Checks</span>
+                        </li>
+                        <li class="flex items-center">
+                            <img src="../images/icon-sub-heading.svg fill.png" alt="">
+                            <span class="ml-2">Technical Support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <img src="../images/icon-sub-heading.svg fill.png" alt="">
+                            <span class="ml-2">Monthly Progress Reports</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="mt-6 bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-400 transition">Purchase
+                        Now</button>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center  p-6">
+                <div class="bg-orange-500 rounded-lg shadow-lg p-6 max-w-xs relative">
+                    <h2 class="text-3xl font-bold text-white">$39</h2>
+                    <p class="text-white">/month</p>
+                    <h3 class="text-xl font-semibold mt-4 text-white">Advanced Plan</h3>
+                    <ul class="mt-4 space-y-2 text-white">
+                        <li class="flex items-center">
+                            <img class="me-2" src="../images/SVG (6).png" alt="">
+                            <span>Standard Manufacturing Services</span>
+                        </li>
+                        <li class="flex items-center">
+                            <img class="me-2" src="../images/SVG (6).png" alt="">
+                            <span>Quality Control Checks</span>
+                        </li>
+                        <li class="flex items-center">
+                            <img class="me-2" src="../images/SVG (6).png" alt="">
+                            <span>Technical Support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <img class="me-2" src="../images/SVG (6).png" alt="">
+                            <span>Monthly Progress Reports</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="mt-6 bg-white text-orange-500 py-2 px-4 rounded hover:bg-gray-200 transition">Purchase
+                        Now</button>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center  p-6">
+                <div class="bg-white rounded-lg shadow-lg p-6 max-w-xs">
+                    <h2 class="text-3xl font-bold text-gray-800">$39</h2>
+                    <p class="text-gray-600">/month</p>
+                    <h3 class="text-xl font-semibold mt-4">Advanced Plan</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li class="flex items-center">
+                            <img src="../images/icon-sub-heading.svg fill.png" alt="">
+                            <span class="ml-2">Standard Manufacturing Services</span>
+                        </li>
+                        <li class="flex items-center">
+                            <img src="../images/icon-sub-heading.svg fill.png" alt="">
+                            <span class="ml-2">Quality Control Checks</span>
+                        </li>
+                        <li class="flex items-center">
+                            <img src="../images/icon-sub-heading.svg fill.png" alt="">
+                            <span class="ml-2">Technical Support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <img src="../images/icon-sub-heading.svg fill.png" alt="">
+                            <span class="ml-2">Monthly Progress Reports</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="mt-6 bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-400 transition">Purchase
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex  justify-center space-x-6 py-4">
+            <div class="flex items-center">
+                <img class="me-2" src="../images/SVG (7).png" alt="">
+                <p class="text-gray-500">Get a 5-day free trial</p>
+            </div>
+            <div class="flex items-center">
+                <img class="me-2" src="../images/Clip path group.png" alt="">
+                <p class="text-gray-500">No hidden fees, cancel anytime</p>
+            </div>
+            <div class="flex items-center">
+                <img class="me-2" src="../images/Clip path group (1).png" alt="">
+                <p class="text-gray-500">You can cancel anytime</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Section 8 -->
+    <section class="container  p-6 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">What Our Satisfied Clients Are Saying</h2>
+        <div class="flex flex-col md:flex-row items-center ">
+            <!-- left side -->
+            <div class="md:w-1/2 flex justify-center">
+                <img class="h-96 rounded-2xl"
+                    src="https://s3-alpha-sig.figma.com/img/209c/592c/f9419f833c22d66a3876367f66a2cdc8?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=dFGRoUEW3fEFhf8kgzBHTgsljSU9iDJ30CC-A4EtA5FAVf0y69TLUwagNAzaHIZ-aI7bDQsySzjZ7qq497ttp~LZGfoUaPuvPFENDKPe9IJCI6OVi36CDR8NLcMj1Q5qJRw4QuGJo9qecrPTK18v250mCACngGxxpd-TtqDTH1Shvpb-BldyI4YobobRq3KvoSuVn6ESK6QXpubNOXq3pzeVVHaTrDclGy~mccrCtnNvuqOKD-PB0hTDWE8KlF53opbHuotlQLKTtXbarQHt3bO3giQZ2SpaJe3Ks6SPP0hEjwKQyaeu7Et8reU-56y0uAT8G2UWqhHBPHAQ0HJBJQ__"
+                    alt="Client" class="rounded-lg shadow-md w-3/4 h-auto">
+            </div>
+            <!-- right side -->
+            <div class="bg-gray-100 flex items-center justify-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg max-w-lg w-full">
+                    <h2 class="text-gray-600 text-lg font-semibold mb-4">OUR CLIENTS SAY</h2>
+                    <h3 class="text-2xl font-bold mb-4">What our satisfied clients are saying</h3>
+                    <p class="text-gray-800 italic mb-4">"The team's attention to detail and commitment to quality
+                        exceeded our expectations. They delivered on time, and their innovative solutions improved our
+                        production efficiency by 30%. Highly recommended!"</p>
+                    <div class="flex items-center mt-4">
+                        <img class="rounded-xl"
+                            src="https://s3-alpha-sig.figma.com/img/09c2/ac00/3711126fd10471e69565489cc03d2b39?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ha1lcFX0xxY9H7Y56zDtG8Wo7-iaSv2OkUZr8YtBTF0PKde615VuUb5qtZPlx4ElOE93Lu145aRGTY3TcIfxLxPD~q4RJO7DAYeL0u0GABKo5h1a7xnQvtBx176QT8toWSllJcKb3ePnWWVCKosNDrZRaPG1B1IYrwVvh09Lr0iEgovNFN5JocWluwCSoCpCjTql6C9M2kgScUKQOy1p1ai4HWdAj-yM~Hq2mec65175~8ZaIiF~qvdcRYh0zGgyNsmQS-EG3Ee4oUweYwSRzwOIPoRCFsRHMmHeI1VoncZNps9OFIx9Lrg3qyGvlJ5Yo2pa1khnwbq4~87tMVAgKA__"
+                            alt="Client Photo" class="w-12 h-12 rounded-full mr-3">
+                        <div>
+                            <p class="font-semibold">Brooklyn Simmons</p>
+                            <p class="text-gray-500">Homeowner</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-end mt-6">
+                        <button class="bg-orange-500 text-white py-2 px-4 me-2 rounded hover:bg-orange-400 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-arrow-left">
+                                <path d="m12 19-7-7 7-7" />
+                                <path d="M19 12H5" />
+                            </svg></button>
+                        <button class="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-400 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-arrow-right">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="flex justify-center mt-6 space-x-4 text-gray-400">
+            <div class="flex items-center space-x-2">
+                <img class="w-4 h-4 mt-1" src="../images/Vector.png" alt="">
+                <p>Logoipsum</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <img class="w-4 h-4 mt-1" src="../images/Vector01.png" alt="">
+                <p>Logoipsum</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <img class="w-4 h-4 mt-1" src="../images/Vector.png" alt="">
+                <p>Logoipsum</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <img class="w-4 h-4 mt-1" src="../images/Vector01.png" alt="">
+                <p>Logoipsum</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <img class="w-4 h-4 mt-1" src="../images/Vector01.png" alt="">
+                <p>Logoipsum</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- section 9 -->
+    <section class="container mx-auto my-12 p-6 w-5/6  rounded-lg shadow-lg">
+        <div class="flex justify-between space-y-4 ">
+            <!-- Left side -->
+            <div class=" w-2/4">
+                <div class="flex ms-2 mt-5 items-center">
+                    <div>
+                        <img class="me-2" src="../images/icon-sub-heading.svg fill.png" alt="">
+                    </div>
+                    <div>
+                        <p>LATEST BLOG</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Insights from Our <br> <strong>Latest
+                            Blogs</strong></h2>
+                </div>
+                <div class="flex  mb-4">
+                    <img class="max-h-96 w-96 rounded-2xl"
+                        src="https://s3-alpha-sig.figma.com/img/3416/2d74/7a0661e754230021d94dacf503ee1fbf?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TFSEfsCojthBxPzH3mmcsWGdN8Kcr0WEA2w05MBqduZ-y4C-2uAY7XH7M3WvO8BVSyO6P5KcFi8N8gWjyzU0Dejf6gekKWPjFIU9xdfyWD0NNeFQ6SCJZtF54WvqHoUQ51xVufoG5fEuraFBWqSvs26HHsVG7uMofULNewaPD7Ce52kCyElpMLfVjEGEw3RBmSXyNMlwKavJTOd0mnJotGI0uQYFu3ImTpxu3d~CKXtK54A8~VAas3N45S0fn0iTieUu31FeuSoZtrHI4cbPfEL5a0SDlv1BMHkro9ZP1kJPuab6GjNJKIxKutVHiC3D32RbzWJuPFAC7hRmIZnEhA__"
+                        alt="Sustainable Practices">
+                </div>
+                <div class="flex items-center w-full  p-4 rounded-lg">
+                    <div class="flex-grow">
+                        <p class="text-gray-600">Sustainable Practices Reducing Waste in <br> Industrial Production</p>
+                    </div>
+                    <div>
+                        <!-- Arrow icon -->
+                        <img src="../images/Link.png" alt="" class="ml-4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side -->
+            <div class=" w-2/4 ms-6">
+
+                <div class="h-32">
+                    <p class="">Stay updated with the latest trends, innovations, and expert insights in the
+                        manufacturing and industrial sectors</p>
+                </div>
+                <div class="flex  mb-4">
+                    <img class="max-h-96 w-96 rounded-2xl"
+                        src="https://s3-alpha-sig.figma.com/img/61bc/2971/2184093399d239d65148f7c4b776a763?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=T2GJNVTMUoIbsQ3-r3FsIu7TdbEpnBO6VjLz7o8rWF3TlcenxYhHXTC3HF6O4UkjYH412PYJRVs6Gcxmyn0HbcJdDhadAYDjC8q2a1xVDtBF0qGGes4gj4CHOv6zyxp8~S5xcX1QUj9gZNx8XF4OHUq4lP-5fGGoTvHs6HzntJcn4MFZSJ41VVWpxhu92VUsmzQAl1-vNg8cdg4JX8bdZhiPb~lN5Lf3A0iMaPAagG6NIuactKELK9Dze3eYAadGiR14PgtjGeiAgnKBBnCBS34FZt3fq~oiB~K7M7lFO0R7ysp21OO1eY2TvpC8y24XZknaGWSopKJTCzpu80i6Pw__"
+                        alt="Sustainable Practices">
+                </div>
+                <div class="flex items-center w-full p-4 rounded-lg">
+                    <div class="flex-grow">
+                        <p class="text-gray-600">Advanced Robotics Revolutionizing<br>
+                            Industrial Workflows</p>
+                    </div>
+                    <div>
+                        <!-- Arrow icon -->
+                        <img src="../images/Link.png" alt="" class="ml-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   
+    <section
+    class=" mt-96 my-12 p-6 bg-cover bg-center relative bg-[url('https://s3-alpha-sig.figma.com/img/4818/6e36/010d42fdc5dec72bfe740555692ef04e?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=laCFoU62eIID8Mbxb7ZgSnEvmnriI2DfBeLHHDd9e5m1ssFJ5yMHeK0-w9cVO0GHqKfQeRAs8LWBddupGPE546lifDb7-D~S0OqVOEuE3ofHxu6w~SEK8g7ROKwFPHiFiuAUC3XsIgjwTcuQp7CdThBWrjNDC1KQ6Tmev4raPgqfzT2kLHfS~834k2EuN3LWTR6t9xy~1sJs9s2RCTDbUhxGA4Wb-KD2lnxtBplvBWuxdPUuC1WkY8EBeTD1R0VQImND6o7PlD6iN8k~a-U4lz09X5bZYnXaPMO5fHkVToNUBIJ6yr7YDdG6VuTtIf8U~I5SeBOSgyrKzV1Px884Yw__')]">
+    <!-- Gradient Overlay (Top and Bottom) -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div> <!-- Top Gradient -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent"></div> <!-- Bottom Gradient -->
+    <div class="absolute inset-0 bg-gradient-to-l from-black to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-tl from-black to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-tr from-black to-40%"></div>
+    <!-- Content -->
+    <div class="relative z-10">
+        <!-- Top Section -->
+        <div class="flex ms-20 justify-between items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-4">Ready to work with us?</h2>
+                <p class="text-gray-300 mb-6">Join us to experience cutting-edge industrial solutions that drive
+                    innovation and lasting success.</p>
+            </div>
+            <div>
+                <img class="w-20 h-20 me-80" src="../images/Background.png" alt="">
+            </div>
+        </div>
+        <!-- Bottom Section -->
+        <div class="border-t  border-gray-700 mt-10 mb-10"></div>
+        <div class="flex ms-20 flex-col md:flex-row justify-between  items-start mt-8">
+            <!-- FactoryPro Section -->
+            <div>
+                <div class="flex items-center mb-4 ">
+                    <div class="relative">
+                        <img src="../images/Vector (5).png" alt="">
+                        <img class="absolute w-5  ms-3 left-3 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                            src="../images/Group_4__1_-removebg-preview.png" alt="FactoryPro">
+                    </div>
+                    <span class="text-xl font-bold text-white ml-2">FactoryPro</span>
+                </div>
+                <div>
+                    <p class="text-gray-300">
+                        We are committed to providing <br>
+                        personalized industrial solutions.
+                    </p>
+                </div>
+                <div class="mt-6 flex">
+                    <img class="me-16" src="../images/item.png" alt="">
+                    <img class="me-4" src="../images/item (1).png" alt="">
+                    <img class="me-4" src="../images/item (2).png" alt="">
+                </div>
+            </div>
+            <!-- Quick Links -->
+            <div class="ms-80 ">
+                <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-300 hover:text-white">Home</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">About Us</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Blog</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Services</a></li>
+                </ul>
+            </div>
+            <!-- Policies -->
+            <div class="ms-44 ">
+                <h4 class="font-semibold text-white mb-4">Policies</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-300 hover:text-white">Terms & Conditions</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Help</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div class="me-72 ms-44">
+                <h4 class="font-semibold text-white mb-4">Contact</h4>
+                <p class="text-gray-300 mb-2">1234567890</p>
+                <p class="text-gray-300 mb-2">info@domain.com</p>
+                <p class="text-gray-300">5201 West Valley, Anytown</p>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 mt-10 "></div>
+        <div class="mt-6 pt-4">
+            <p class="text-center text-gray-500">Copyright © 2024. All Rights Reserved.</p>
+        </div>
+    </div>
+</section>
+
+</body>
+
+</html>
