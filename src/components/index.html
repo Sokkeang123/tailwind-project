@@ -18,13 +18,44 @@
     <section
         class="min-h-screen h-auto bg-center bg-cover bg-no-repeat position-relative bg-[url('https://s3-alpha-sig.figma.com/img/7dda/2dce/3c5237e02638621aad3ba670d0115845?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ArBM~SF-ZOj9Ur3aNLa3Zuz~zk531NUzVOQKOjtmjaHqrDDDb-b~CVouStF-7xZ5QZ4OnkrX8dyV7cUF1KSpbWNlPUWnw~IGH-PALOYN9WiNq4LhsK6n5ili6Fj1gCRvkVeJVsOtFSV9Ge8Y4ZLgw4OzyQjavmxRJhm0m8JFUXJHq9Fvs8x7ZOqOjrZgyeOa1Atinui1vSBs3SAsaAoTCbQyXxhvCotkaOYk-ogA8ZGjMsr9yhE-LnpMfc8hGxOpFx6s49Va97PYc9QhA4kZmDKtI2b6FE4alu2gEaaaja4Z6QquMRKi0ySk0izgBUSdL4QUlCYPfkulgLsu4hDOCA__')]">
         <!-- Navigation Bar -->
-        <nav class="flex justify-between items-center lg:px-28 px-5 py-4 bg-black bg-opacity-50">
+        <nav class="relative flex justify-between items-center lg:px-28 px-5 py-4 z-10">
             <!-- Logo -->
             <div class="flex items-center space-x-2">
                 <i class="fa-solid fa-hammer text-2xl text-pink-600"></i>
                 <p class="text-white font-semibold uppercase text-lg tracking-wider">Factory Pro</p>
             </div>
-            <!-- Navigation Links -->
+            <!-- Hamburger Menu Button -->
+            <div class="lg:hidden">
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="cursor-pointer text-white">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </label>
+                <!-- Navigation Links -->
+                <ul id="menu" class="hidden flex-col gap-6 items-center absolute left-0 top-full w-full bg-amber-500 p-5">
+                    <li><a href="#" class="transition-colors">Home</a></li>
+                    <li><a href="about.html" class="transition-colors">About Us</a></li>
+                    <li class="group relative">
+                        <div class="flex items-center cursor-pointer transition-colors">
+                            <span>Services</span>
+                            <i class="fa-solid fa-chevron-down ml-2 text-sm"></i>
+                        </div>
+                    </li>
+                    <li><a href="blog.html" class="transition-colors">Blog</a></li>
+                    <li><a href="customerManu.html" class="transition-colors">Projects</a></li>
+                    <li class="group relative">
+                        <div class="flex items-center cursor-pointer transition-colors">
+                            <span>Page</span>
+                            <i class="fa-solid fa-chevron-down ml-2 text-sm"></i>
+                        </div>
+                    </li>
+                    <li><a href="#" class="hover:text-pink-600 transition-colors">Contact Us</a></li>
+                    <li class="flex items-center text-white rounded-full py-2 px-4 transition-colors">
+                        <i class="fa-solid fa-phone-volume mr-2"></i>
+                        <p>+01 123456789</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Navigation Links for larger screens -->
             <ul class="hidden lg:flex text-white gap-6 items-center">
                 <li><a href="#" class="transition-colors">Home</a></li>
                 <li><a href="#" class="transition-colors">About Us</a></li>
@@ -43,13 +74,11 @@
                     </div>
                 </li>
                 <li><a href="#" class="hover:text-pink-600 transition-colors">Contact Us</a></li>
-                <!-- Phone Icon & Number -->
-            <li class="flex items-center text-white rounded-full py-2 px-4 transition-colors">
-                <i class="fa-solid fa-phone-volume mr-2"></i>
-                <p>+01 123456789</p>
-            </li>
+                <li class="flex items-center text-white rounded-full py-2 px-4 transition-colors">
+                    <i class="fa-solid fa-phone-volume mr-2"></i>
+                    <p>+01 123456789</p>
+                </li>
             </ul>
-            
         </nav>
         <!-- Hero Content -->
         <div class="flex flex-col justify-center items-center  h-[80vh]">
@@ -92,7 +121,6 @@
     </section>
 
     <!-- section 2 -->
-    <!-- Building quality -->
     <section
         class="min-h-screen w-screen bg-contain bg-center bg-[url('https://s3-alpha-sig.figma.com/img/e21b/f34f/d53480725a3ab1715a5c5b3122644103?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=RrQSoMLeN1n99lGDJr7twiXUFt5qIWthawA4dhWO5D82mV3KADqaW-pEJkwervpzw-N3~YGMOS3EN5RMJrFjn1hxkfl~A21DHbK9DrVJSAdrBim27vHsfVlrYVt5WNQSRF0Fu4wax6Nj04gIsxbOK6psoBI1zIySfCyTvGGpF3H-i71U1Kutm5pXf42V8lZboRnsRFosXRq8kUQNMA7j96ysZggA5~r9eAwiQDttmDTK1oCwJFD2UiHS0f4W~o9lXvLdkEV2iAI1inENQtrqVJjZl15MzGReX94iRQaslbksxaIybqdbkxSaHbv1Gg2-V3DCIo08ttPQ1pAfMDL-3Q__')]">
         <!-- First section of Building quality -->
@@ -223,79 +251,68 @@
         <div class="bg-white h-50 w-3/4 mx-auto rounded-2xl shadow-lg">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
                 <!-- Custom Manufacturing Section -->
-                <div class="h-60 space-y-6 ps-8">
+                <div class="h-60 space-y-6 px-8">
                     <!-- icon -->
                     <div class="mt-8">
-                        <img src="../images/Vector (1).png" alt="">
+                        <img src="../images/Vector (1).png" alt="Custom Manufacturing">
                     </div>
                     <!-- custom -->
                     <div>
                         <p class="text-xl font-semibold">Custom Manufacturing <br> Solution</p>
                     </div>
                     <!-- arrow symbol -->
-                    <div
-                        class="flex items-center justify-center bg-gray-300 w-20 p-2 ps-6 rounded-xl hover:bg-gray-400 transition ease-in-out duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-arrow-right text-gray-600 hover:text-gray-800">
+                    <div class="flex items-center justify-center bg-gray-300 w-20 p-2 rounded-xl hover:bg-gray-400 transition ease-in-out duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-gray-600 hover:text-gray-800">
                             <path d="M5 12h14" />
                             <path d="m12 5 7 7-7 7" />
                         </svg>
                     </div>
                 </div>
                 <!-- Repeat other sections similarly -->
-                <div class="h-60 space-y-6 ps-8 border-l-2 border-gray-200">
+                <div class="h-60 space-y-6 px-8 border-l-2 border-gray-200">
                     <div class="mt-8">
-                        <img src="../images/SVG.png" alt="">
+                        <img src="../images/SVG.png" alt="Industrial Automation">
                     </div>
                     <div>
                         <p class="text-xl font-semibold">Industrial Automation <br> And Robotics</p>
                     </div>
-                    <div
-                        class="flex items-center justify-center bg-gray-300 w-20 p-2 ps-6 rounded-xl hover:bg-gray-400 transition ease-in-out duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-arrow-right text-gray-600 hover:text-gray-800">
+                    <div class="flex items-center justify-center bg-gray-300 w-20 p-2 rounded-xl hover:bg-gray-400 transition ease-in-out duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-gray-600 hover:text-gray-800">
                             <path d="M5 12h14" />
                             <path d="m12 5 7 7-7 7" />
                         </svg>
                     </div>
                 </div>
-                <div class="h-60 space-y-6 ps-8 border-l-2 border-gray-200">
+                <div class="h-60 space-y-6 px-8 border-l-2 border-gray-200">
                     <div class="mt-8">
-                        <img src="../images/SVG (1).png" alt="">
+                        <img src="../images/SVG (1).png" alt="Product Design">
                     </div>
                     <div>
                         <p class="text-xl font-semibold">Product Design And <br> Prototyping</p>
                     </div>
-                    <div
-                        class="flex items-center justify-center bg-gray-300 w-20 p-2 ps-6 rounded-xl hover:bg-gray-400 transition ease-in-out duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-arrow-right text-gray-600 hover:text-gray-800">
+                    <div class="flex items-center justify-center bg-gray-300 w-20 p-2 rounded-xl hover:bg-gray-400 transition ease-in-out duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-gray-600 hover:text-gray-800">
                             <path d="M5 12h14" />
                             <path d="m12 5 7 7-7 7" />
                         </svg>
                     </div>
                 </div>
-                <div class="h-60 space-y-6 ps-8 border-l-2 border-gray-200">
+                <div class="h-60 space-y-6 px-8 border-l-2 border-gray-200">
                     <div class="mt-8">
-                        <img src="../images/Vector (2).png" alt="">
+                        <img src="../images/Vector (2).png" alt="Equipment Maintenance">
                     </div>
                     <div>
                         <p class="text-xl font-semibold">Equipment Maintenance <br> Support</p>
                     </div>
-                    <div
-                        class="flex items-center justify-center bg-gray-300 w-20 p-2 ps-6 rounded-xl hover:bg-gray-400 transition ease-in-out duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-arrow-right text-gray-600 hover:text-gray-800">
+                    <div class="flex items-center justify-center bg-gray-300 w-20 p-2 rounded-xl hover:bg-gray-400 transition ease-in-out duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-gray-600 hover:text-gray-800">
                             <path d="M5 12h14" />
                             <path d="m12 5 7 7-7 7" />
                         </svg>
                     </div>
                 </div>
             </div>
+            
         </div>
 
         <!-- second section -->
@@ -395,7 +412,7 @@
         <section class="grid grid-cols-1 md:grid-cols-2 gap-6 text-white bg-black p-8">
             <!-- Left Side -->
             <div>
-                <div class="bg-gray-600 p-6 rounded-lg shadow-lg mb-6">
+                <div class=" p-6 rounded-lg shadow-lg mb-6">
                     <div class="flex">
                         <div>
                             <img class="me-2" src="../images/icon-sub-heading.svg fill.png" alt="">
@@ -480,14 +497,20 @@
             <!-- Tags Section -->
             <section class="text-center mb-12">
                 <div class="flex flex-wrap justify-center gap-2">
-                    <span class=" text-yellow-600 text-sm font-semibold px-4 py-2 ">All /</span>
-                    <span class="text-sm font-semibold px-4 py-2 ">Automation / </span>
-                    <span class="text-sm font-semibold px-4 py-2 ">Development / </span>
-                    <span class=" text-sm font-semibold px-4 py-2 rounded-full">Infrastructure / </span>
-                    <span class=" text-sm font-semibold px-4 py-2 rounded-full">Manufacturing / </span>
-                    <span class=" text-sm font-semibold px-4 py-2 rounded-full">Sustainability</span>
+                    <span class="text-yellow-600 text-sm font-semibold px-4 py-2">All  </span>
+                    <span class="text-sm font-semibold px-4 py-2">/</span>
+                    <span class="text-sm font-semibold px-4 py-2"> Automation  </span>
+                    <span class="text-sm font-semibold px-4 py-2">/</span>
+                    <span class="text-sm font-semibold px-4 py-2"> Development  </span>
+                    <span class="text-sm font-semibold px-4 py-2">/</span>
+                    <span class="text-sm font-semibold px-4 py-2 rounded-full"> Infrastructure  </span>
+                    <span class="text-sm font-semibold px-4 py-2">/</span>
+                    <span class="text-sm font-semibold px-4 py-2 rounded-full"> Manufacturing  </span>
+                    <span class="text-sm font-semibold px-4 py-2">/</span>
+                    <span class="text-sm font-semibold px-4 py-2 rounded-full"> Sustainability </span>
                 </div>
             </section>
+
 
             <!-- Divider -->
             <div class="border-t border-gray-300 my-8"></div>
@@ -859,7 +882,7 @@
     <!-- Footer -->
    
     <section
-    class=" mt-96 my-12 p-6 bg-cover bg-center relative bg-[url('https://s3-alpha-sig.figma.com/img/4818/6e36/010d42fdc5dec72bfe740555692ef04e?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=laCFoU62eIID8Mbxb7ZgSnEvmnriI2DfBeLHHDd9e5m1ssFJ5yMHeK0-w9cVO0GHqKfQeRAs8LWBddupGPE546lifDb7-D~S0OqVOEuE3ofHxu6w~SEK8g7ROKwFPHiFiuAUC3XsIgjwTcuQp7CdThBWrjNDC1KQ6Tmev4raPgqfzT2kLHfS~834k2EuN3LWTR6t9xy~1sJs9s2RCTDbUhxGA4Wb-KD2lnxtBplvBWuxdPUuC1WkY8EBeTD1R0VQImND6o7PlD6iN8k~a-U4lz09X5bZYnXaPMO5fHkVToNUBIJ6yr7YDdG6VuTtIf8U~I5SeBOSgyrKzV1Px884Yw__')]">
+    class=" my-12 p-6 bg-cover bg-center relative bg-[url('https://s3-alpha-sig.figma.com/img/4818/6e36/010d42fdc5dec72bfe740555692ef04e?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=laCFoU62eIID8Mbxb7ZgSnEvmnriI2DfBeLHHDd9e5m1ssFJ5yMHeK0-w9cVO0GHqKfQeRAs8LWBddupGPE546lifDb7-D~S0OqVOEuE3ofHxu6w~SEK8g7ROKwFPHiFiuAUC3XsIgjwTcuQp7CdThBWrjNDC1KQ6Tmev4raPgqfzT2kLHfS~834k2EuN3LWTR6t9xy~1sJs9s2RCTDbUhxGA4Wb-KD2lnxtBplvBWuxdPUuC1WkY8EBeTD1R0VQImND6o7PlD6iN8k~a-U4lz09X5bZYnXaPMO5fHkVToNUBIJ6yr7YDdG6VuTtIf8U~I5SeBOSgyrKzV1Px884Yw__')]">
     <!-- Gradient Overlay (Top and Bottom) -->
     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div> <!-- Top Gradient -->
     <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent"></div> <!-- Bottom Gradient -->

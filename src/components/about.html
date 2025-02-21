@@ -16,28 +16,34 @@
 <body>
     <!-- Hero Section -->
     <section
-        class="min-h-screen position-relative  bg-repeat h-auto bg-center bg-contain position-relative bg-[url('https://s3-alpha-sig.figma.com/img/0c6e/d1f2/84ad103f098347c986f9842aa4608b9f?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=iys3Bc6ay~xyKdkHERtGtkl8qv2qza7HEglx4DOCxBq33mI0llNTnk8nHEzJlmJCy3xpHqlnMTwC43Zeu7yqGPo5oDIhKrWIlojBknHSL3MFWT-o4B5JGSh-3G5I-Q6~B6YbKxBNgm8L7jjWY83ZclfbYWKSKZderrNmJfK~KciydjguAE7T1qJ1vp72l2gun369UZEM1YlhrFF8OWy6vZuT5cV0UJyG1iMoDr7q-fmjklDIYRfARgX5HIACT62pgaXXvuMO5OP2DQ0JaF7klFB13yqC7Cj2PGrOnY8v7F89Ve-Bk84f6bXrvOWvj3hWlDXv-lJbvKV8ZEKTa6b1aw__')]">
-        <!-- Gradient in image -->
-        <div class="absolute inset-0 bg-gradient-to-l from-transparent via-black/80 to-black/100"></div>
-        <!-- Navigation Bar -->
-        <nav class="relative flex justify-between items-center lg:px-28 px-5 py-4 z-10">
-            <!-- Logo -->
-            <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-hammer text-2xl text-pink-600"></i>
-                <p class="text-white font-semibold uppercase text-lg tracking-wider">Factory Pro</p>
-            </div>
+    class="min-h-screen position-relative  bg-no-repeat h-auto bg-center bg-[url('https://s3-alpha-sig.figma.com/img/0c6e/d1f2/84ad103f098347c986f9842aa4608b9f?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=iys3Bc6ay~xyKdkHERtGtkl8qv2qza7HEglx4DOCxBq33mI0llNTnk8nHEzJlmJCy3xpHqlnMTwC43Zeu7yqGPo5oDIhKrWIlojBknHSL3MFWT-o4B5JGSh-3G5I-Q6~B6YbKxBNgm8L7jjWY83ZclfbYWKSKZderrNmJfK~KciydjguAE7T1qJ1vp72l2gun369UZEM1YlhrFF8OWy6vZuT5cV0UJyG1iMoDr7q-fmjklDIYRfARgX5HIACT62pgaXXvuMO5OP2DQ0JaF7klFB13yqC7Cj2PGrOnY8v7F89Ve-Bk84f6bXrvOWvj3hWlDXv-lJbvKV8ZEKTa6b1aw__')]">
+    <!-- Gradient in image -->
+    <div class="absolute inset-0 bg-gradient-to-l from-transparent via-black/80 to-black/100"></div>
+    <!-- Navigation Bar -->
+    <nav class="relative flex justify-between items-center lg:px-28 px-5 py-4 z-10">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-hammer text-2xl text-pink-600"></i>
+            <p class="text-white font-semibold uppercase text-lg tracking-wider">Factory Pro</p>
+        </div>
+        <!-- Hamburger Menu Button -->
+        <div class="lg:hidden">
+            <input type="checkbox" id="menu-toggle" class="hidden">
+            <label for="menu-toggle" class="cursor-pointer text-white">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </label>
             <!-- Navigation Links -->
-            <ul class="hidden lg:flex text-white gap-10 items-center">
+            <ul id="menu" class="hidden flex-col gap-6 items-center absolute left-0 top-full w-full bg-amber-500 p-5">
                 <li><a href="#" class="transition-colors">Home</a></li>
-                <li><a href="#" class="transition-colors">About Us</a></li>
+                <li><a href="about.html" class="transition-colors">About Us</a></li>
                 <li class="group relative">
                     <div class="flex items-center cursor-pointer transition-colors">
                         <span>Services</span>
                         <i class="fa-solid fa-chevron-down ml-2 text-sm"></i>
                     </div>
                 </li>
-                <li><a href="#" class="transition-colors">Blog</a></li>
-                <li><a href="#" class="transition-colors">Projects</a></li>
+                <li><a href="blog.html" class="transition-colors">Blog</a></li>
+                <li><a href="customerManu.html" class="transition-colors">Projects</a></li>
                 <li class="group relative">
                     <div class="flex items-center cursor-pointer transition-colors">
                         <span>Page</span>
@@ -50,22 +56,54 @@
                     <p>+01 123456789</p>
                 </li>
             </ul>
-        </nav>
-        <!-- Hero Content -->
-        <div class="relative z-10 text-white left-60 top-80 w-80 p-4">
-            <h1 class="text-6xl">About Us</h1>
-            <div class="flex mt-2">
-                <div>
-                    <p>Home</p>
+        </div>
+        <!-- Navigation Links for larger screens -->
+        <ul class="hidden lg:flex text-white gap-6 items-center">
+            <li><a href="#" class="transition-colors">Home</a></li>
+            <li><a href="#" class="transition-colors">About Us</a></li>
+            <li class="group relative">
+                <div class="flex items-center cursor-pointer transition-colors">
+                    <span>Services</span>
+                    <i class="fa-solid fa-chevron-down ml-2 text-sm"></i>
                 </div>
-                <!-- icon item -->
-                <div class="ms-2  flex items-center">
-                    <img src="../images/Item (3).png" alt="">
-                    <span class="text-yellow-600 ">About Us</span>
+            </li>
+            <li><a href="#" class="transition-colors">Blog</a></li>
+            <li><a href="#" class="transition-colors">Projects</a></li>
+            <li class="group relative">
+                <div class="flex items-center cursor-pointer transition-colors">
+                    <span>Page</span>
+                    <i class="fa-solid fa-chevron-down ml-2 text-sm"></i>
                 </div>
+            </li>
+            <li><a href="#" class="hover:text-pink-600 transition-colors">Contact Us</a></li>
+            <li class="flex items-center text-white rounded-full py-2 px-4 transition-colors">
+                <i class="fa-solid fa-phone-volume mr-2"></i>
+                <p>+01 123456789</p>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- flowbit navbar -->
+
+
+  
+
+   
+    <!-- Hero Content -->
+    <div class="relative z-10 text-white left-10 sm:left-20 md:left-60 top-20 sm:top-40 md:top-80 w-full sm:w-3/4 md:w-96 p-4">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl">ALatest Post</h1>
+        <div class="flex flex-col sm:flex-row mt-2">
+            <div>
+                <p>Home</p>
+            </div>
+            <!-- icon item -->
+            <div class="ms-2 flex items-center">
+                <img src="../images/Item (3).png" alt="">
+                <span class="text-yellow-600 ">About Us</span>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <!-- Section 2 -->
     <section
         class="min-h-screen w-screen bg-contain position-relative bg-center bg-[url('https://s3-alpha-sig.figma.com/img/e21b/f34f/d53480725a3ab1715a5c5b3122644103?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=RrQSoMLeN1n99lGDJr7twiXUFt5qIWthawA4dhWO5D82mV3KADqaW-pEJkwervpzw-N3~YGMOS3EN5RMJrFjn1hxkfl~A21DHbK9DrVJSAdrBim27vHsfVlrYVt5WNQSRF0Fu4wax6Nj04gIsxbOK6psoBI1zIySfCyTvGGpF3H-i71U1Kutm5pXf42V8lZboRnsRFosXRq8kUQNMA7j96ysZggA5~r9eAwiQDttmDTK1oCwJFD2UiHS0f4W~o9lXvLdkEV2iAI1inENQtrqVJjZl15MzGReX94iRQaslbksxaIybqdbkxSaHbv1Gg2-V3DCIo08ttPQ1pAfMDL-3Q__')]">
@@ -187,7 +225,7 @@
         </div>
     </section>
     <!-- Section 3 -->
-    <section class="relative top-[-40px] h-auto w-full">
+    <section class="relative top-[-40px]  w-full">
         <!-- First section -->
         <div class="bg-white w-3/4  mx-auto rounded-2xl shadow-lg">
             <div class="  md:grid-cols-3 lg:grid-cols-3 gap-4 ">
@@ -201,8 +239,6 @@
                             <p>Our Mission</p>
                         </div>
                     </div>
-                    
-
                     <div>
                         <div class="flex w-60 ms-60 items-center justify-center h-16 ">
                             <div class="flex items-center justify-center">
@@ -407,7 +443,7 @@
     <section class="grid grid-cols-1 md:grid-cols-2 gap-6 text-white bg-black p-8">
         <!-- Left Side -->
         <div>
-            <div class="bg-gray-600 p-6 rounded-lg shadow-lg mb-6">
+            <div class=" p-6 rounded-lg shadow-lg mb-6">
                 <p>
                     <img src="../images/icon-sub-heading.svg fill.png" alt="">
                     WHAT WE DO
@@ -416,25 +452,25 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-gray-600 p-6 rounded-lg shadow-lg">
+                <div class=" p-6 rounded-lg shadow-lg">
                     <img src="../images/SVG (2).png" alt="Image 1" class="mb-3">
                     <h2 class="text-2xl font-semibold mb-3">Automation Solutions</h2>
                     <p class="text-gray-300">Streamlining processes through <br> cutting-edge technology.</p>
                 </div>
 
-                <div class="bg-gray-600 p-6 rounded-lg shadow-lg">
+                <div class=" p-6 rounded-lg shadow-lg">
                     <img src="../images/SVG (3).png" alt="Image 2" class="mb-3">
                     <h2 class="text-2xl font-semibold mb-3">Quality Control</h2>
                     <p class="text-gray-300">Ensuring product excellence through <br> rigorous testing.</p>
                 </div>
 
-                <div class="bg-gray-600 p-6 rounded-lg shadow-lg">
+                <div class=" p-6 rounded-lg shadow-lg">
                     <img src="../images/SVG (4).png" alt="Image 3" class="mb-3">
                     <h2 class="text-2xl font-semibold mb-3">Process Engineering</h2>
                     <p class="text-gray-300">Enhancing manufacturing efficiency through <br> optimized processes.</p>
                 </div>
 
-                <div class="bg-gray-600 p-6 rounded-lg shadow-lg">
+                <div class=" p-6 rounded-lg shadow-lg">
                     <img src="../images/Container.png" alt="Image 4" class="mb-3">
                     <h2 class="text-2xl font-semibold mb-3">Product Development</h2>
                     <p class="text-gray-300">Creating innovative products with <br> cutting-edge technology.</p>
@@ -505,8 +541,6 @@
                 </div>
 
             </div>
-
-
             <!-- bottom -->
             <div class="flex ">
                 <div class="h-96 flex w-2/4 mx-4">
@@ -517,7 +551,6 @@
                         <p>Robotics streamline complex tasks, reducing production time and minimizing downtime, which
                             leads to higher output and faster delivery.</p>
                     </div>
-
                 </div>
 
                 <!-- right of top -->
@@ -858,7 +891,7 @@
 
     <!-- Footer -->
     <section
-    class=" mt-96 my-12 p-6 bg-cover bg-center relative bg-[url('https://s3-alpha-sig.figma.com/img/4818/6e36/010d42fdc5dec72bfe740555692ef04e?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=laCFoU62eIID8Mbxb7ZgSnEvmnriI2DfBeLHHDd9e5m1ssFJ5yMHeK0-w9cVO0GHqKfQeRAs8LWBddupGPE546lifDb7-D~S0OqVOEuE3ofHxu6w~SEK8g7ROKwFPHiFiuAUC3XsIgjwTcuQp7CdThBWrjNDC1KQ6Tmev4raPgqfzT2kLHfS~834k2EuN3LWTR6t9xy~1sJs9s2RCTDbUhxGA4Wb-KD2lnxtBplvBWuxdPUuC1WkY8EBeTD1R0VQImND6o7PlD6iN8k~a-U4lz09X5bZYnXaPMO5fHkVToNUBIJ6yr7YDdG6VuTtIf8U~I5SeBOSgyrKzV1Px884Yw__')]">
+    class="  my-12 p-6 bg-cover bg-center relative bg-[url('https://s3-alpha-sig.figma.com/img/4818/6e36/010d42fdc5dec72bfe740555692ef04e?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=laCFoU62eIID8Mbxb7ZgSnEvmnriI2DfBeLHHDd9e5m1ssFJ5yMHeK0-w9cVO0GHqKfQeRAs8LWBddupGPE546lifDb7-D~S0OqVOEuE3ofHxu6w~SEK8g7ROKwFPHiFiuAUC3XsIgjwTcuQp7CdThBWrjNDC1KQ6Tmev4raPgqfzT2kLHfS~834k2EuN3LWTR6t9xy~1sJs9s2RCTDbUhxGA4Wb-KD2lnxtBplvBWuxdPUuC1WkY8EBeTD1R0VQImND6o7PlD6iN8k~a-U4lz09X5bZYnXaPMO5fHkVToNUBIJ6yr7YDdG6VuTtIf8U~I5SeBOSgyrKzV1Px884Yw__')]">
     <!-- Gradient Overlay (Top and Bottom) -->
     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div> <!-- Top Gradient -->
     <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent"></div> <!-- Bottom Gradient -->
